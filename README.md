@@ -1,0 +1,1 @@
+# multimodular-project-logging-example
