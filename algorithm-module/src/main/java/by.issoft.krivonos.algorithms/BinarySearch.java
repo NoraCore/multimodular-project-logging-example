@@ -23,8 +23,8 @@ public class BinarySearch {
 
     /**
      * @param sortedArray     – the array to be searched
-     * @param firstIndex      – the index of the first element (inclusive) to be searched
-     * @param lastIndex       – the index of the last element (exclusive) to be searched
+     * @param firstIndex      – the index of the first element to be searched
+     * @param lastIndex       – the index of the last element to be searched
      * @param elementToSearch - the value to be searched for
      * @return index of the search key, if it is contained in the array; otherwise, returns - 1.
      */
@@ -32,7 +32,6 @@ public class BinarySearch {
 
         if (lastIndex >= firstIndex) {
             int middle = firstIndex + (lastIndex - firstIndex) / 2;
-
             logger.debug("Search in the range from {} to {} indexes, the middle element = {}", firstIndex, lastIndex, sortedArray[middle]);
             if (sortedArray[middle] == elementToSearch) {
                 logger.debug("The end of algorithm. The middle element is {}, index of it is {}", sortedArray[middle], middle);
